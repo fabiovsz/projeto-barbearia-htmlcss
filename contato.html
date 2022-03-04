@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Contato</title>
+        <link rel="stylesheet" href="reset.css">        
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+             
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <h1><img src="imagens/joe-barber.png" width="120px" alt="Logo da Barbearia"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main-contato">
+            <form class="formulario">
+                <label for="nome">Nome:</label>
+                <input class="tb" type="text" id="nome" required>
+                <label for="mail">Email:</label>
+                <input class="tb" type="email" id="mail" required placeholder="seuemail@dominio.com">
+                <label for="tel">Telefone</label>
+                <input class="tb" type="tel" id="tel" required placeholder="(XX) XXXXX-XXXX" oninput = "this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');">           
+                <label for="mensagem">Mensagem</label>
+                <textarea class="tb" id="mensagem" cols="70" rows="10" required></textarea>
+                <fieldset class="preferencia-contato">
+                    <legend>Como prefere que entremos em contato?</legend>
+                    <label for="rb-mail"><input type="radio" name="tipo-contato" value="email" id="rb-mail" checked>Email</label>
+                    
+                    <label for="rb-tel"><input type="radio" name="tipo-contato" value="telefone" id="rb-tel">Telefone</label>
+                    
+                    <label for="rb-whats"><input type="radio" name="tipo-contato" value="whats" id="rb-whats">WhatsApp</label>
+                    
+                </fieldset>
+                    <label> Gostaria de receber nossas novidades por email?  <input class="check" type="checkbox" checked></label>
+                    <fieldset class="horario">
+                        <legend>Qual horário prefere ser atendido?</legend>
+                        <select>
+                            <option>Manhã</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>
+                    </fieldset>
+                <input type="submit" value="Enviar formulário" id="enviar">
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>                    
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h~18h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h~18h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h~18h</td>
+                    </tr>
+                </tbody>
+            </table>    
+        </main>
+        <footer>
+            <img src="imagens/joe-barber.png" width="120px" alt="Logo da Barbearia">
+            <p class="copyright">&copy; Todos os direitos reservados - Barbearia 2021</p>
+        </footer>
+    </body>        
+</html>

@@ -1,0 +1,305 @@
+/* css da home */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    background: url(imagens/background-cinza.png);
+    padding: 20px 0px 20px 0px;
+}
+.navbar {   
+    position: relative;
+    margin: 0 auto;
+    width: 940px;
+}
+nav {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    
+}
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+nav a:hover {
+    color: darkgoldenrod;
+    text-decoration: underline;
+}
+
+.cabecalho {
+    margin-left: 20px;
+    
+}
+.topo {
+    text-align: right;
+}
+
+.banner {
+    width: 100%;
+    
+}
+
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.img-utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.principal p {
+    margin: 0 0 1em;
+    
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.degrade {
+    background: linear-gradient(#FEFEFE,grey);
+}
+
+.mapa {
+    padding: 3em 0;
+    
+}
+
+.mapa-bg {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p {
+    text-align: center;
+    margin: 0 0 2em ;
+
+}
+
+.benefits-bg {
+    background: grey;
+}
+
+.cortes {
+    margin-bottom: 3em;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.video {
+    width: 560px;
+    height: 315px;
+    margin: 0 auto;
+}
+
+.benefits {
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.benefits-content {
+    width: 640px;
+    margin: 0 auto;
+
+}
+
+.benefits-img {
+    width: 60%;
+    transition: 400ms;
+    opacity: 1;
+    box-shadow: 10px 10px 15px black;
+}
+
+.benefits-img:hover {
+    opacity: 0.3;
+       
+}
+
+.benefits-list {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+.itens::before {
+    content: "🟊 ";
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+footer {
+    background: url(imagens/bg.jpg);
+    text-align: center;
+    padding: 40px 0;
+
+}
+.copyright {
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 480px) {
+    .navbar, .principal, .mapa, .benefits, .video  {
+        width: auto;
+    }
+    
+}
+
+/* css dos produtos */
+
+.products {
+    width: 940px;
+    margin: 0px auto;
+    padding: 50px 0;
+}
+.products li {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 30%;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 3px solid black;
+    border-radius: 10px;
+    transition: 300ms all;
+    
+}
+.products li:hover {
+    border-color: #C78C19;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.products li:active {
+    border-color: blue;
+}
+.titulo-produto {
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+}
+.info-produto {   
+    font-size: 18px;
+    color: black;
+}
+
+.preco {
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+    margin-top: 10px;
+}
+footer {
+    background: url(imagens/bg.jpg);
+    padding: 40px 0;
+    text-align: center;
+}
+.copyright {
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+/* css do contato */
+
+.main-contato {
+    width: 940px;
+    margin: 0 auto;
+}
+.formulario {
+    margin: 40px 0;
+    
+}
+.formulario label, .formulario legend {
+    display: block;
+    margin: 0 0 15px 0;
+    font-size: 20px;
+}
+
+.tb {
+    border: 1.5px solid black;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 45%;
+}
+.check {
+    margin: 20px 0;
+}
+#enviar {
+    margin-top: 40px;
+    padding: 15px 0;
+    border: none;
+    background-color: orange;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 16px;
+    width: 50%;    
+    color: white;
+    transition: 800ms;
+    cursor: pointer;
+}
+#enviar:hover {
+    background-color: darkorange;
+    
+
+}
+.horario legend {
+    display: inline;
+    
+}
+.horario select {
+    margin:  0 15px;
+    border: 1.5px solid black;
+    border-radius: 8px;
+    font-size: 16px;
+}
+table {
+    margin: 20px 0 40px;
+}
+thead {
+    background: darkgray;
+    color: white;
+    font-weight: bold;
+    
+}
+td, th {
+    border: 1px solid black;
+    padding: 8px 15px;
+}
